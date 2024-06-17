@@ -27,7 +27,7 @@ from diffusers_sd3_control.image_processor import VaeImageProcessor
 from diffusers_sd3_control.loaders import FromSingleFileMixin, SD3LoraLoaderMixin
 from diffusers_sd3_control.models.autoencoders import AutoencoderKL
 from diffusers_sd3_control.models.transformers import SD3Transformer2DModel
-from diffusers_sd3_control.models.controlnet_sd3 import ControlNetSD3Model, MultiControlNetSD3Model
+from diffusers_sd3_control.models.controlnet_sd3 import SD3ControlNetModel, SD3MultiControlNetModel
 from diffusers_sd3_control.schedulers import FlowMatchEulerDiscreteScheduler
 from diffusers_sd3_control.utils import (
     is_torch_xla_available,
