@@ -91,7 +91,11 @@ class SD3MCN_Generation_Zho:
         
         output = pipe(
             prompt=positive,
+            prompt_2=positive,
+            prompt_3=positive,
             negative_prompt=negative,
+            negative_prompt_2=negative,
+            negative_prompt_3=negative,
             width=width,
             height=height,
             num_inference_steps=steps,
