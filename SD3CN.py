@@ -27,7 +27,7 @@ class SD3MCN_BaseModelLoader_Zho:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "base_model": ("STRING", {"default": "sd3_medium_incl_clips_t5xxlfp16.safetensors"}),
+                "base_model": ("STRING", {"default": "stabilityai/stable-diffusion-3-medium-diffusers"}),
                 "cn_model": (["InstantX/SD3-Controlnet-Canny", "InstantX/SD3-Controlnet-Pose", "InstantX/SD3-Controlnet-Tile", "InstantX/SD3-Controlnet-Inpainting"],),
             }
         }

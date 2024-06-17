@@ -1,1 +1,3 @@
+transformers
+huggingface_hub
 git+https://github.com/prodogape/diffusers_sd3_control.git
