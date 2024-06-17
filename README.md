@@ -8,7 +8,7 @@
 ```
 are not stable, I forked these two and debugged them until they have worked properly.
 
-- Frankly, the controlnet model and the ComfyUI custom node are not perfect, and maybe I'll develop these codes to make them better.
+- Frankly, the controlnet model and the ComfyUI custom nodes are not perfect, and maybe I'll develop these codes to make them better in the future.
 
 - Please follow the instruction below.
  
