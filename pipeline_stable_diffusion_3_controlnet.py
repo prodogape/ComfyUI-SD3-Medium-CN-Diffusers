@@ -180,7 +180,6 @@ class StableDiffusion3CommonPipeline(DiffusionPipeline, SD3LoraLoaderMixin, From
     ):
         super().__init__()
 
-        print(type(controlnet_list), controlnet_list)
         for i, c in enumerate(controlnet_list):
             if isinstance(c, str):
                 controlnet_list[i] = SD3ControlNetModel.from_pretrained(c)
@@ -984,7 +983,7 @@ class StableDiffusion3CommonPipeline(DiffusionPipeline, SD3LoraLoaderMixin, From
                     timestep=timestep,
                     encoder_hidden_states=prompt_embeds,
                     pooled_projections=pooled_prompt_embeds,
-                    controlnet_block_samples=control_block_samples,
+                    # controlnet_block_samples=control_block_samples,
                     joint_attention_kwargs=self.joint_attention_kwargs,
                     return_dict=False,
                 )[0]
