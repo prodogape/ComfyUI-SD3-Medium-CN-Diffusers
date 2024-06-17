@@ -23,20 +23,20 @@ from transformers import (
     T5TokenizerFast,
 )
 
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.loaders import FromSingleFileMixin, SD3LoraLoaderMixin
-from diffusers.models.autoencoders import AutoencoderKL
-from diffusers.models.transformers import SD3Transformer2DModel
-from diffusers.models.controlnet_sd3 import ControlNetSD3Model, MultiControlNetSD3Model
-from diffusers.schedulers import FlowMatchEulerDiscreteScheduler
-from diffusers.utils import (
+from diffusers_sd3_control.image_processor import VaeImageProcessor
+from diffusers_sd3_control.loaders import FromSingleFileMixin, SD3LoraLoaderMixin
+from diffusers_sd3_control.models.autoencoders import AutoencoderKL
+from diffusers_sd3_control.models.transformers import SD3Transformer2DModel
+from diffusers_sd3_control.models.controlnet_sd3 import ControlNetSD3Model, MultiControlNetSD3Model
+from diffusers_sd3_control.schedulers import FlowMatchEulerDiscreteScheduler
+from diffusers_sd3_control.utils import (
     is_torch_xla_available,
     logging,
     replace_example_docstring,
 )
-from diffusers.utils.torch_utils import randn_tensor
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion_3.pipeline_output import StableDiffusion3PipelineOutput
+from diffusers_sd3_control.utils.torch_utils import randn_tensor
+from diffusers_sd3_control.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_sd3_control.pipelines.stable_diffusion_3.pipeline_output import StableDiffusion3PipelineOutput
 
 from comfy.utils import ProgressBar
 
@@ -54,7 +54,7 @@ EXAMPLE_DOC_STRING = """
     Examples:
         ```py
         >>> import torch
-        >>> from diffusers import StableDiffusion3Pipeline
+        >>> from diffusers_sd3_control import StableDiffusion3Pipeline
 
         >>> pipe = StableDiffusion3Pipeline.from_pretrained(
         ...     "stabilityai/stable-diffusion-3-medium-diffusers", torch_dtype=torch.float16

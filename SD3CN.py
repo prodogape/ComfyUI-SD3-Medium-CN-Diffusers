@@ -1,9 +1,9 @@
 import torch
 import os
 import folder_paths
-from diffusers import StableDiffusion3Pipeline
-from diffusers.models.controlnet_sd3 import ControlNetSD3Model
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_sd3_control import StableDiffusion3Pipeline
+from diffusers_sd3_control.models.controlnet_sd3 import ControlNetSD3Model
+from diffusers_sd3_control.utils.torch_utils import randn_tensor
 from huggingface_hub import hf_hub_download
 import numpy as np
 from PIL import Image
@@ -27,7 +27,7 @@ class SD3MCN_BaseModelLoader_Zho:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "base_model": ("STRING", {"default": "v2ray/stable-diffusion-3-medium-diffusers"}),
+                "base_model": ("STRING", {"default": "sd3_medium_incl_clips_t5xxlfp16.safetensors"}),
                 "cn_model": (["InstantX/SD3-Controlnet-Canny", "InstantX/SD3-Controlnet-Pose", "InstantX/SD3-Controlnet-Tile", "InstantX/SD3-Controlnet-Inpainting"],),
             }
         }
