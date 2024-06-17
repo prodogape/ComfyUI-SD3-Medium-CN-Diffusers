@@ -179,7 +179,7 @@ class StableDiffusion3CommonPipeline(DiffusionPipeline, SD3LoraLoaderMixin, From
         controlnet_list: SD3MultiControlNetModel,
     ):
         super().__init__()
-
+        print(type(controlnet_list), controlnet_list)
         controlnet_list = SD3MultiControlNetModel(controlnet_list)
         
         self.register_modules(
