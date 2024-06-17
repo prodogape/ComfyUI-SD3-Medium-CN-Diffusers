@@ -44,6 +44,7 @@ class SD3MCN_BaseModelLoader_Zho:
         pipe = StableDiffusion3CommonPipeline.from_pretrained(
             base_model,
             controlnet_list=cn_model,
+            torch_dtype=torch.float16
         ).to(device, dtype=torch.float16)
         return [pipe]
 
