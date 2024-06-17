@@ -6,11 +6,7 @@ git clone https://github.com/prodogape/ComfyUI-SD3-Medium-CN-Diffusers.git
 
 cd ComfyUI-SD3-Medium-CN-Diffusers
 
-git clone -b sd3_control https://github.com/prodogape/diffusers_sd3_control.git
-
-cd diffusers_sd3_control（原项目代码这里有问题，这是改好的）
-
-pip install -e .
+pip install -r requirements.txt
 ```
 
 ### readme in origin repo:
