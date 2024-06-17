@@ -1,5 +1,21 @@
 # ComfyUI-SD3-Medium-CN-Diffusers（WIP）
 
+### Install(Manual)
+```
+git clone https://github.com/prodogape/ComfyUI-SD3-Medium-CN-Diffusers.git
+
+cd ComfyUI-SD3-Medium-CN-Diffusers
+
+git clone -b sd3_control https://github.com/prodogape/diffusers_sd3_control.git
+
+cd diffusers_sd3_control（原项目代码这里有问题，这是改好的）
+
+pip install -e .
+```
+
+### readme in origin repo:
+
+---
 ![screenshot-20240616-034804](https://github.com/ZHO-ZHO-ZHO/ComfyUI-SD3-Medium-CN-Diffusers/assets/140084057/a09efa7c-6df0-464d-a7bc-19c3af913a67)
 
 
