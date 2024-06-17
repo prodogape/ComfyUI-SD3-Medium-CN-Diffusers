@@ -176,11 +176,11 @@ class StableDiffusion3CommonPipeline(DiffusionPipeline, SD3LoraLoaderMixin, From
         tokenizer_2: CLIPTokenizer,
         text_encoder_3: T5EncoderModel,
         tokenizer_3: T5TokenizerFast,
-        controlnet_list: MultiControlNetSD3Model,
+        controlnet_list: SD3MultiControlNetModel,
     ):
         super().__init__()
 
-        controlnet_list = MultiControlNetSD3Model(controlnet_list)
+        controlnet_list = SD3MultiControlNetModel(controlnet_list)
         
         self.register_modules(
             vae=vae,
