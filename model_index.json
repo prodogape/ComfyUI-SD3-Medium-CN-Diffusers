@@ -1,0 +1,40 @@
+{
+  "_class_name": "StableDiffusion3Pipeline",
+  "_diffusers_version": "0.30.0.dev0",
+  "scheduler": [
+    "diffusers_sd3_control",
+    "FlowMatchEulerDiscreteScheduler"
+  ],
+  "text_encoder": [
+    "transformers",
+    "CLIPTextModelWithProjection"
+  ],
+  "text_encoder_2": [
+    "transformers",
+    "CLIPTextModelWithProjection"
+  ],
+  "text_encoder_3": [
+    "transformers",
+    "T5EncoderModel"
+  ],
+  "tokenizer": [
+    "transformers",
+    "CLIPTokenizer"
+  ],
+  "tokenizer_2": [
+    "transformers",
+    "CLIPTokenizer"
+  ],
+  "tokenizer_3": [
+    "transformers",
+    "T5TokenizerFast"
+  ],
+  "transformer": [
+    "diffusers_sd3_control",
+    "SD3Transformer2DModel"
+  ],
+  "vae": [
+    "diffusers_sd3_control",
+    "AutoencoderKL"
+  ]
+}
