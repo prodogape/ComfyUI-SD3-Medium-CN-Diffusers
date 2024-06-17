@@ -45,7 +45,7 @@ class SD3MCN_BaseModelLoader_Zho:
             base_model,
             controlnet_list=cn_model,
             torch_dtype=torch.float16
-        ).to(device, dtype=torch.float16)
+        ).to(device)  #, dtype=torch.float16
         return [pipe]
 
 
