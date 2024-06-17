@@ -2,7 +2,7 @@ import torch
 import os
 import folder_paths
 from diffusers_sd3_control import StableDiffusion3Pipeline
-from diffusers_sd3_control.models.controlnet_sd3 import ControlNetSD3Model
+from diffusers_sd3_control.models.controlnet_sd3 import SD3ControlNetModel
 from diffusers_sd3_control.utils.torch_utils import randn_tensor
 from huggingface_hub import hf_hub_download
 import numpy as np
