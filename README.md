@@ -6,7 +6,7 @@
   https://github.com/ZHO-ZHO-ZHO/ComfyUI-SD3-Medium-CN-Diffusers
   https://github.com/instantX-research/diffusers_sd3_control
 ```
-are not stable, I forked these two and debugged them until they work properly.
+are not stable, I forked these two and debugged them until they have worked properly.
 
 - Frankly, the controlnet model and the ComfyUI custom node are not perfect, and maybe I'll develop these codes to make them better.
 
